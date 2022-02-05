@@ -33,7 +33,7 @@ class ShopItemViewModel() : ViewModel() {
         val count = parsCount(imputCount)
         val fildsValide = validateInput(name, count)
         if (fildsValide) {
-            val shopItem = ShopItem(name, count, true)
+            val shopItem = ShopItem(name, count, false)
             editSgopItemUseCese.editShopItem(shopItem)
         }
     }
